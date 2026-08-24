@@ -1,0 +1,455 @@
+Page: Floral Diamond Ring - Premium Product Details
+
+```html
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral Diamond Ring | Vijaya Krishna Jewellers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary: #7A1118;
+            --primary-hover: #9B1C24;
+            --charcoal: #1C1C1C;
+            --warm-white: #FEFBF9;
+            --border: #E8E5E2;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--charcoal);
+            background-color: white;
+        }
+
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-filled {
+            background-color: var(--primary);
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-filled:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex flex-col" data-sd-id="1">
+        <!-- Announcement Bar -->
+        <div class="w-full h-10 bg-white flex items-center justify-center border-b border-[#E8E5E2] px-4" data-sd-id="2">
+            <p class="text-[11px] md:text-[12px] tracking-widest font-medium text-[#7A1118] uppercase" data-sd-id="3">
+                Personalised jewellery consultation | Visit our Madanapalle store | Book your appointment
+            </p>
+        </div>
+
+        <!-- Header -->
+        <header class="sticky top-0 z-50 bg-white border-b border-[#E8E5E2] w-full h-24 flex items-center" data-sd-id="4">
+            <div class="max-w-[1440px] mx-auto w-full px-6 md:px-12 flex items-center justify-between" data-sd-id="5">
+                <a href="#" id="header-logo-link" class="flex items-center gap-4 group" data-sd-id="6">
+                    <div class="w-20 h-20 bg-[#FFF5F3] rounded-full flex items-center justify-center p-1 border border-[#7A1118]/10 shrink-0 shadow-sm" data-sd-id="7">
+                        <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/43025c08-4082-4a51-be13-74c2c6004878/1787580136682-c6c007e9/Screenshot_2025-05-27_at_10.32.13_AM.png" alt="Vijaya Krishna Jewellers" class="h-14 w-auto object-contain" data-sd-id="8">
+                    </div>
+                    <div class="hidden md:block" data-sd-id="9">
+                        <h1 class="font-serif text-2xl font-bold leading-tight tracking-tight text-[#1C1C1C]" data-sd-id="10">VIJAYA KRISHNA</h1>
+                        <p class="text-[11px] tracking-[0.25em] uppercase font-medium text-[#7A1118]" data-sd-id="11">Jewellers</p>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-8" data-sd-id="12">
+                    <a href="#" id="nav-shop" class="nav-link text-sm font-medium tracking-wide" data-sd-id="13">Shop</a>
+                    <a href="#" id="nav-collections" class="nav-link text-sm font-medium tracking-wide" data-sd-id="14">Collections</a>
+                    <a href="#" id="nav-occasions" class="nav-link text-sm font-medium tracking-wide" data-sd-id="15">Occasions</a>
+                    <a href="#" id="nav-gifts" class="nav-link text-sm font-medium tracking-wide" data-sd-id="16">Gifts</a>
+                    <a href="#" id="nav-arrivals" class="nav-link text-sm font-medium tracking-wide" data-sd-id="17">New Arrivals</a>
+                    <a href="#" id="nav-services" class="nav-link text-sm font-medium tracking-wide" data-sd-id="18">Services</a>
+                    <a href="#" id="nav-discover" class="nav-link text-sm font-medium tracking-wide" data-sd-id="19">Discover</a>
+                </nav>
+                <div class="flex items-center gap-6 text-[#7A1118]" data-sd-id="20">
+                    <button id="btn-search-pdp" class="hover:scale-115 transition-transform" data-sd-id="21"><iconify-icon icon="lucide:search" width="20"></iconify-icon></button>
+                    <a href="#" id="nav-wishlist-pdp" class="hover:scale-115 transition-transform" data-sd-id="22"><iconify-icon icon="lucide:heart" width="20"></iconify-icon></a>
+                    <a href="#" id="nav-account-pdp" class="hover:scale-115 transition-transform" data-sd-id="23"><iconify-icon icon="lucide:user" width="20"></iconify-icon></a>
+                    <a href="#" id="nav-cart-pdp" class="hover:scale-115 transition-transform relative" data-sd-id="24">
+                        <iconify-icon icon="lucide:shopping-bag" width="20"></iconify-icon>
+                        <span class="absolute -top-1 -right-1 bg-[#7A1118] text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full" data-sd-id="25">0</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1 bg-white" data-sd-id="26">
+            <!-- Breadcrumbs -->
+            <div class="max-w-[1440px] mx-auto px-6 md:px-12 py-6" data-sd-id="27">
+                <nav class="flex text-[11px] uppercase tracking-widest text-gray-400 gap-2" data-sd-id="28">
+                    <a href="#" id="crumb-home" class="hover:text-[#7A1118]" data-sd-id="29">Home</a>
+                    <span data-sd-id="30">/</span>
+                    <a href="#" id="crumb-rings" class="hover:text-[#7A1118]" data-sd-id="31">Rings</a>
+                    <span data-sd-id="32">/</span>
+                    <span class="text-gray-900" data-sd-id="33">Floral Diamond Ring</span>
+                </nav>
+            </div>
+
+            <!-- Product Section -->
+            <section class="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 pb-20" data-sd-id="34">
+                <!-- Left: Gallery -->
+                <div class="space-y-6" data-sd-id="35">
+                    <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] flex items-center justify-center relative group overflow-hidden" data-sd-id="36">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Floral Diamond Ring" class="w-4/5 h-4/5 object-contain transition-transform duration-500 group-hover:scale-110" data-sd-id="37">
+                        <div class="absolute bottom-6 right-6 p-2 bg-white/80 rounded-full text-[#7A1118] opacity-0 group-hover:opacity-100 transition-opacity" data-sd-id="38">
+                            <iconify-icon icon="lucide:zoom-in" width="20"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-4 gap-4" data-sd-id="39">
+                        <div class="aspect-square bg-[#FEFBF9] border-2 border-[#7A1118] p-2 flex items-center justify-center" data-sd-id="40">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&amp;fit=crop&amp;q=80&amp;w=200" class="w-full h-full object-contain" data-sd-id="41">
+                        </div>
+                        <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] p-2 flex items-center justify-center hover:border-gray-400 transition-colors cursor-pointer" data-sd-id="42">
+                            <img src="https://images.unsplash.com/photo-1603912627214-90a1506a386b?auto=format&amp;fit=crop&amp;q=80&amp;w=200" class="w-full h-full object-contain" data-sd-id="43">
+                        </div>
+                        <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] p-2 flex items-center justify-center hover:border-gray-400 transition-colors cursor-pointer" data-sd-id="44">
+                            <img src="https://images.unsplash.com/photo-1598560917807-1bae44bd2be8?auto=format&amp;fit=crop&amp;q=80&amp;w=200" class="w-full h-full object-contain" data-sd-id="45">
+                        </div>
+                        <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] p-2 flex items-center justify-center hover:border-gray-400 transition-colors cursor-pointer" data-sd-id="46">
+                            <img src="https://images.unsplash.com/photo-1543290950-71744d10b81d?auto=format&amp;fit=crop&amp;q=80&amp;w=200" class="w-full h-full object-contain" data-sd-id="47">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Details -->
+                <div class="flex flex-col" data-sd-id="48">
+                    <div class="flex justify-between items-start" data-sd-id="49">
+                        <h2 class="font-serif text-3xl md:text-4xl text-[#1C1C1C] max-w-md" data-sd-id="50">Floral Diamond Ring</h2>
+                        <button id="fav-product" class="text-2xl text-[#7A1118] hover:scale-110 transition-transform" data-sd-id="51"><iconify-icon icon="lucide:heart"></iconify-icon></button>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mt-2" data-sd-id="52">
+                        <div class="flex text-yellow-400" data-sd-id="53">
+                            <iconify-icon icon="mdi:star"></iconify-icon>
+                            <iconify-icon icon="mdi:star"></iconify-icon>
+                            <iconify-icon icon="mdi:star"></iconify-icon>
+                            <iconify-icon icon="mdi:star"></iconify-icon>
+                            <iconify-icon icon="mdi:star-half"></iconify-icon>
+                        </div>
+                        <span class="text-xs text-gray-500 font-medium tracking-wide underline uppercase" data-sd-id="54">4.8/5 Stars (342 Reviews)</span>
+                    </div>
+
+                    <div class="mt-8" data-sd-id="55">
+                        <div class="flex items-baseline gap-3" data-sd-id="56">
+                            <span class="text-3xl font-bold tracking-tight text-[#1C1C1C]" data-sd-id="57">₹42,500</span>
+                            <span class="text-sm text-gray-400 line-through" data-sd-id="58">₹48,000</span>
+                            <span class="text-xs font-bold text-green-600" data-sd-id="59">12% OFF</span>
+                        </div>
+                        <p class="text-[13px] text-gray-500 mt-1 uppercase tracking-wider" data-sd-id="60">18K Gold · 0.25 ct Diamond</p>
+                    </div>
+
+                    <!-- Selectors -->
+                    <div class="mt-10 space-y-6" data-sd-id="61">
+                        <div data-sd-id="62">
+                            <label class="text-[11px] font-bold uppercase tracking-widest text-gray-500 block mb-3" data-sd-id="63">Select Ring Size (India)</label>
+                            <div class="flex flex-wrap gap-2" data-sd-id="64">
+                                <button class="w-12 h-12 border border-[#E8E5E2] flex items-center justify-center text-xs hover:border-[#7A1118] transition-colors" data-sd-id="65">12</button>
+                                <button class="w-12 h-12 border-2 border-[#7A1118] flex items-center justify-center text-xs text-[#7A1118] font-bold" data-sd-id="66">14</button>
+                                <button class="w-12 h-12 border border-[#E8E5E2] flex items-center justify-center text-xs hover:border-[#7A1118] transition-colors" data-sd-id="67">16</button>
+                                <button class="w-12 h-12 border border-[#E8E5E2] flex items-center justify-center text-xs hover:border-[#7A1118] transition-colors" data-sd-id="68">18</button>
+                                <button class="w-12 h-12 border border-[#E8E5E2] flex items-center justify-center text-xs hover:border-[#7A1118] transition-colors" data-sd-id="69">20</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Badges -->
+                    <div class="mt-8 flex gap-4" data-sd-id="70">
+                        <div class="bg-green-50 px-4 py-2 flex items-center gap-2 border border-green-100" data-sd-id="71">
+                            <iconify-icon icon="lucide:truck" class="text-green-600"></iconify-icon>
+                            <span class="text-[11px] font-bold text-green-700 uppercase tracking-widest" data-sd-id="72">Free Shipping · 2-3 Days</span>
+                        </div>
+                        <div class="bg-blue-50 px-4 py-2 flex items-center gap-2 border border-blue-100" data-sd-id="73">
+                            <iconify-icon icon="lucide:check-circle" class="text-blue-600"></iconify-icon>
+                            <span class="text-[11px] font-bold text-blue-700 uppercase tracking-widest" data-sd-id="74">In Stock · 3 Pieces</span>
+                        </div>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="mt-10 space-y-4" data-sd-id="75">
+                        <button id="add-to-bag-pdp" class="btn-filled w-full py-4 text-xs font-bold tracking-[0.2em] uppercase" data-sd-id="76">Add to Bag</button>
+                        <button id="buy-now-pdp" class="btn-outline w-full py-4 text-xs font-bold tracking-[0.2em] uppercase" data-sd-id="77">Buy Now</button>
+                    </div>
+
+                    <!-- Trust Row -->
+                    <div class="mt-12 grid grid-cols-2 gap-y-6 md:grid-cols-4 text-center border-t border-[#E8E5E2] pt-8" data-sd-id="78">
+                        <div class="flex flex-col items-center" data-sd-id="79">
+                            <iconify-icon icon="lucide:shield-check" class="text-2xl text-[#7A1118] mb-2"></iconify-icon>
+                            <span class="text-[9px] uppercase font-bold text-gray-500 tracking-wider" data-sd-id="80">BIS Hallmarked</span>
+                        </div>
+                        <div class="flex flex-col items-center" data-sd-id="81">
+                            <iconify-icon icon="lucide:award" class="text-2xl text-[#7A1118] mb-2"></iconify-icon>
+                            <span class="text-[9px] uppercase font-bold text-gray-500 tracking-wider" data-sd-id="82">Certified Quality</span>
+                        </div>
+                        <div class="flex flex-col items-center" data-sd-id="83">
+                            <iconify-icon icon="lucide:lock" class="text-2xl text-[#7A1118] mb-2"></iconify-icon>
+                            <span class="text-[9px] uppercase font-bold text-gray-500 tracking-wider" data-sd-id="84">Secure Pay</span>
+                        </div>
+                        <div class="flex flex-col items-center" data-sd-id="85">
+                            <iconify-icon icon="lucide:rotate-cw" class="text-2xl text-[#7A1118] mb-2"></iconify-icon>
+                            <span class="text-[9px] uppercase font-bold text-gray-500 tracking-wider" data-sd-id="86">Easy Exchange</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detailed Information -->
+            <section class="w-full bg-[#FEFBF9] border-y border-[#E8E5E2] py-20 px-6 md:px-12" data-sd-id="87">
+                <div class="max-w-[1440px] mx-auto" data-sd-id="88">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20" data-sd-id="89">
+                        <!-- Description & Breakup -->
+                        <div data-sd-id="90">
+                            <h3 class="font-serif text-2xl mb-6" data-sd-id="91">Product Description</h3>
+                            <p class="text-base text-gray-700 leading-relaxed font-light mb-10" data-sd-id="92">
+                                Timeless elegance meets contemporary design. Crafted in premium 18K gold with a stunning VS1 diamond, this floral-inspired ring celebrates love in its purest form. Perfect for engagements or special occasions, its intricate detailing showcases heritage craftsmanship.
+                            </p>
+
+                            <details class="group border border-[#E8E5E2] bg-white" data-sd-id="93">
+                                <summary class="list-none cursor-pointer p-5 flex justify-between items-center" data-sd-id="94">
+                                    <span class="text-[11px] font-bold uppercase tracking-[0.2em]" data-sd-id="95">Price Breakup</span>
+                                    <iconify-icon icon="lucide:chevron-down" class="group-open:rotate-180 transition-transform"></iconify-icon>
+                                </summary>
+                                <div class="p-6 pt-0 space-y-3" data-sd-id="96">
+                                    <div class="flex justify-between text-sm text-gray-600" data-sd-id="97"><span data-sd-id="98">Gold Value</span><span data-sd-id="99">₹22,500</span></div>
+                                    <div class="flex justify-between text-sm text-gray-600" data-sd-id="100"><span data-sd-id="101">Diamond Value</span><span data-sd-id="102">₹15,000</span></div>
+                                    <div class="flex justify-between text-sm text-gray-600" data-sd-id="103"><span data-sd-id="104">Making Charges</span><span data-sd-id="105">₹2,500</span></div>
+                                    <div class="flex justify-between text-sm text-gray-600" data-sd-id="106"><span data-sd-id="107">GST (3%)</span><span data-sd-id="108">₹2,500</span></div>
+                                    <div class="flex justify-between font-bold text-[#1C1C1C] pt-3 border-t" data-sd-id="109"><span data-sd-id="110">Total Price</span><span data-sd-id="111">₹42,500</span></div>
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Specifications Accordion -->
+                        <div class="space-y-4" data-sd-id="112">
+                            <details class="group border border-[#E8E5E2] bg-white" open="" data-sd-id="113">
+                                <summary class="list-none cursor-pointer p-5 flex justify-between items-center" data-sd-id="114">
+                                    <span class="text-[11px] font-bold uppercase tracking-[0.2em]" data-sd-id="115">Gold Details</span>
+                                    <iconify-icon icon="lucide:chevron-down" class="group-open:rotate-180 transition-transform"></iconify-icon>
+                                </summary>
+                                <div class="p-6 pt-0 grid grid-cols-2 gap-y-4" data-sd-id="116">
+                                    <div class="text-xs" data-sd-id="117"><p class="text-gray-400 mb-1" data-sd-id="118">Purity</p><p class="font-medium" data-sd-id="119">18K Yellow Gold</p></div>
+                                    <div class="text-xs" data-sd-id="120"><p class="text-gray-400 mb-1" data-sd-id="121">Net Weight</p><p class="font-medium" data-sd-id="122">2.8g</p></div>
+                                    <div class="text-xs" data-sd-id="123"><p class="text-gray-400 mb-1" data-sd-id="124">BIS Hallmark</p><p class="font-medium" data-sd-id="125">Certified</p></div>
+                                    <div class="text-xs" data-sd-id="126"><p class="text-gray-400 mb-1" data-sd-id="127">Style</p><p class="font-medium" data-sd-id="128">Contemporary</p></div>
+                                </div>
+                            </details>
+                            
+                            <details class="group border border-[#E8E5E2] bg-white" data-sd-id="129">
+                                <summary class="list-none cursor-pointer p-5 flex justify-between items-center" data-sd-id="130">
+                                    <span class="text-[11px] font-bold uppercase tracking-[0.2em]" data-sd-id="131">Diamond Details</span>
+                                    <iconify-icon icon="lucide:chevron-down" class="group-open:rotate-180 transition-transform"></iconify-icon>
+                                </summary>
+                                <div class="p-6 pt-0 grid grid-cols-2 gap-y-4" data-sd-id="132">
+                                    <div class="text-xs" data-sd-id="133"><p class="text-gray-400 mb-1" data-sd-id="134">Diamond Type</p><p class="font-medium" data-sd-id="135">Natural Diamond</p></div>
+                                    <div class="text-xs" data-sd-id="136"><p class="text-gray-400 mb-1" data-sd-id="137">Clarity / Color</p><p class="font-medium" data-sd-id="138">VS1 / G-H</p></div>
+                                    <div class="text-xs" data-sd-id="139"><p class="text-gray-400 mb-1" data-sd-id="140">Total Carat</p><p class="font-medium" data-sd-id="141">0.25 ct</p></div>
+                                    <div class="text-xs" data-sd-id="142"><p class="text-gray-400 mb-1" data-sd-id="143">Setting</p><p class="font-medium" data-sd-id="144">Prong Setting</p></div>
+                                </div>
+                            </details>
+
+                            <details class="group border border-[#E8E5E2] bg-white" data-sd-id="145">
+                                <summary class="list-none cursor-pointer p-5 flex justify-between items-center" data-sd-id="146">
+                                    <span class="text-[11px] font-bold uppercase tracking-[0.2em]" data-sd-id="147">Dimensions</span>
+                                    <iconify-icon icon="lucide:chevron-down" class="group-open:rotate-180 transition-transform"></iconify-icon>
+                                </summary>
+                                <div class="p-6 pt-0 grid grid-cols-2 gap-y-4" data-sd-id="148">
+                                    <div class="text-xs" data-sd-id="149"><p class="text-gray-400 mb-1" data-sd-id="150">Ring Width</p><p class="font-medium" data-sd-id="151">4.0 mm</p></div>
+                                    <div class="text-xs" data-sd-id="152"><p class="text-gray-400 mb-1" data-sd-id="153">Top Stone height</p><p class="font-medium" data-sd-id="154">5.0 mm</p></div>
+                                </div>
+                            </details>
+
+                            <details class="group border border-[#E8E5E2] bg-white" data-sd-id="155">
+                                <summary class="list-none cursor-pointer p-5 flex justify-between items-center" data-sd-id="156">
+                                    <span class="text-[11px] font-bold uppercase tracking-[0.2em]" data-sd-id="157">Care Instructions</span>
+                                    <iconify-icon icon="lucide:chevron-down" class="group-open:rotate-180 transition-transform"></iconify-icon>
+                                </summary>
+                                <div class="p-6 pt-0" data-sd-id="158">
+                                    <p class="text-xs text-gray-600 leading-relaxed" data-sd-id="159">Clean your diamond ring regularly using warm water and a mild soap solution. Store separately in the provided fabric-lined case to prevent scratches.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Products -->
+            <section class="w-full py-24 px-6 md:px-12" data-sd-id="160">
+                <div class="max-w-[1440px] mx-auto" data-sd-id="161">
+                    <div class="flex justify-between items-end mb-12" data-sd-id="162">
+                        <h3 class="font-serif text-3xl" data-sd-id="163">You May Also Like</h3>
+                        <a href="#" id="view-all-similar" class="text-[11px] font-bold uppercase tracking-widest text-[#7A1118] border-b border-[#7A1118]" data-sd-id="164">View All Similar</a>
+                    </div>
+                    
+                    <div class="flex gap-6 overflow-x-auto hide-scrollbar pb-8" data-sd-id="165">
+                        <!-- Card 1 -->
+                        <div class="group min-w-[300px] w-[300px] bg-[#FEFBF9] border border-[#E8E5E2] p-4 relative flex flex-col" data-sd-id="166">
+                            <button class="absolute top-4 right-4 text-[#7A1118] opacity-0 group-hover:opacity-100 transition-opacity" data-sd-id="167"><iconify-icon icon="lucide:heart"></iconify-icon></button>
+                            <div class="aspect-square mb-4 flex items-center justify-center" data-sd-id="168">
+                                <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&amp;fit=crop&amp;q=80&amp;w=400" class="w-3/4 h-3/4 object-contain group-hover:scale-105 transition-transform" data-sd-id="169">
+                            </div>
+                            <h4 class="text-sm font-medium mb-1" data-sd-id="170">Classic Halo Studs</h4>
+                            <p class="text-[10px] text-gray-500 mb-3" data-sd-id="171">18K Gold · 0.20 ct</p>
+                            <div class="flex justify-between items-center mt-auto" data-sd-id="172">
+                                <span class="text-base font-bold" data-sd-id="173">₹34,200</span>
+                                <button class="w-10 h-10 border border-[#7A1118] text-[#7A1118] hover:bg-[#7A1118] hover:text-white transition-colors flex items-center justify-center" data-sd-id="174">
+                                    <iconify-icon icon="lucide:shopping-bag"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="group min-w-[300px] w-[300px] bg-[#FEFBF9] border border-[#E8E5E2] p-4 relative flex flex-col" data-sd-id="175">
+                            <button class="absolute top-4 right-4 text-[#7A1118] opacity-0 group-hover:opacity-100 transition-opacity" data-sd-id="176"><iconify-icon icon="lucide:heart"></iconify-icon></button>
+                            <div class="aspect-square mb-4 flex items-center justify-center" data-sd-id="177">
+                                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&amp;fit=crop&amp;q=80&amp;w=400" class="w-3/4 h-3/4 object-contain group-hover:scale-105 transition-transform" data-sd-id="178">
+                            </div>
+                            <h4 class="text-sm font-medium mb-1" data-sd-id="179">Infinity Diamond Bangle</h4>
+                            <p class="text-[10px] text-gray-500 mb-3" data-sd-id="180">14K Gold · 0.35 ct</p>
+                            <div class="flex justify-between items-center mt-auto" data-sd-id="181">
+                                <span class="text-base font-bold" data-sd-id="182">₹82,000</span>
+                                <button class="w-10 h-10 border border-[#7A1118] text-[#7A1118] hover:bg-[#7A1118] hover:text-white transition-colors flex items-center justify-center" data-sd-id="183">
+                                    <iconify-icon icon="lucide:shopping-bag"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="group min-w-[300px] w-[300px] bg-[#FEFBF9] border border-[#E8E5E2] p-4 relative flex flex-col" data-sd-id="184">
+                            <button class="absolute top-4 right-4 text-[#7A1118] opacity-0 group-hover:opacity-100 transition-opacity" data-sd-id="185"><iconify-icon icon="lucide:heart"></iconify-icon></button>
+                            <div class="aspect-square mb-4 flex items-center justify-center" data-sd-id="186">
+                                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&amp;fit=crop&amp;q=80&amp;w=400" class="w-3/4 h-3/4 object-contain group-hover:scale-105 transition-transform" data-sd-id="187">
+                            </div>
+                            <h4 class="text-sm font-medium mb-1" data-sd-id="188">Floral Pendant Set</h4>
+                            <p class="text-[10px] text-gray-500 mb-3" data-sd-id="189">18K Gold · 0.15 ct</p>
+                            <div class="flex justify-between items-center mt-auto" data-sd-id="190">
+                                <span class="text-base font-bold" data-sd-id="191">₹46,500</span>
+                                <button class="w-10 h-10 border border-[#7A1118] text-[#7A1118] hover:bg-[#7A1118] hover:text-white transition-colors flex items-center justify-center" data-sd-id="192">
+                                    <iconify-icon icon="lucide:shopping-bag"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="group min-w-[300px] w-[300px] bg-[#FEFBF9] border border-[#E8E5E2] p-4 relative flex flex-col" data-sd-id="193">
+                            <button class="absolute top-4 right-4 text-[#7A1118] opacity-0 group-hover:opacity-100 transition-opacity" data-sd-id="194"><iconify-icon icon="lucide:heart"></iconify-icon></button>
+                            <div class="aspect-square mb-4 flex items-center justify-center" data-sd-id="195">
+                                <img src="https://images.unsplash.com/photo-1629227306219-42e2c55485e8?auto=format&amp;fit=crop&amp;q=80&amp;w=400" class="w-3/4 h-3/4 object-contain group-hover:scale-105 transition-transform" data-sd-id="196">
+                            </div>
+                            <h4 class="text-sm font-medium mb-1" data-sd-id="197">Gold Eternity Band</h4>
+                            <p class="text-[10px] text-gray-500 mb-3" data-sd-id="198">22K Gold · Plain</p>
+                            <div class="flex justify-between items-center mt-auto" data-sd-id="199">
+                                <span class="text-base font-bold" data-sd-id="200">₹28,800</span>
+                                <button class="w-10 h-10 border border-[#7A1118] text-[#7A1118] hover:bg-[#7A1118] hover:text-white transition-colors flex items-center justify-center" data-sd-id="201">
+                                    <iconify-icon icon="lucide:shopping-bag"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full bg-[#7A1118] text-white pt-20" data-sd-id="202">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16" data-sd-id="203">
+                <div data-sd-id="204">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-8" data-sd-id="205">Shop</h4>
+                    <ul class="space-y-4 text-[13px] text-white/70 font-light" data-sd-id="206">
+                        <li data-sd-id="207"><a href="#" id="footer-shop-gold" class="hover:text-white transition-colors" data-sd-id="208">Gold Jewellery</a></li>
+                        <li data-sd-id="209"><a href="#" id="footer-shop-diamond" class="hover:text-white transition-colors" data-sd-id="210">Diamond Jewellery</a></li>
+                        <li data-sd-id="211"><a href="#" id="footer-shop-rings" class="hover:text-white transition-colors" data-sd-id="212">Engagement Rings</a></li>
+                        <li data-sd-id="213"><a href="#" id="footer-shop-necklace" class="hover:text-white transition-colors" data-sd-id="214">Necklaces</a></li>
+                    </ul>
+                </div>
+                <div data-sd-id="215">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-8" data-sd-id="216">Customer Service</h4>
+                    <ul class="space-y-4 text-[13px] text-white/70 font-light" data-sd-id="217">
+                        <li data-sd-id="218"><a href="#" id="footer-contact" class="hover:text-white transition-colors" data-sd-id="219">Contact Us</a></li>
+                        <li data-sd-id="220"><a href="#" id="footer-shipping" class="hover:text-white transition-colors" data-sd-id="221">Shipping Policy</a></li>
+                        <li data-sd-id="222"><a href="#" id="footer-returns" class="hover:text-white transition-colors" data-sd-id="223">Returns &amp; Exchanges</a></li>
+                        <li data-sd-id="224"><a href="#" id="footer-track" class="hover:text-white transition-colors" data-sd-id="225">Order Tracking</a></li>
+                    </ul>
+                </div>
+                <div data-sd-id="226">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-8" data-sd-id="227">Services</h4>
+                    <ul class="space-y-4 text-[13px] text-white/70 font-light" data-sd-id="228">
+                        <li data-sd-id="229"><a href="#" id="footer-svc-appointment" class="hover:text-white transition-colors" data-sd-id="230">Book Appointment</a></li>
+                        <li data-sd-id="231"><a href="#" id="footer-svc-try" class="hover:text-white transition-colors" data-sd-id="232">Try at Home</a></li>
+                        <li data-sd-id="233"><a href="#" id="footer-svc-custom" class="hover:text-white transition-colors" data-sd-id="234">Custom Jewellery</a></li>
+                        <li data-sd-id="235"><a href="#" id="footer-svc-locator" class="hover:text-white transition-colors" data-sd-id="236">Store Locator</a></li>
+                    </ul>
+                </div>
+                <div data-sd-id="237">
+                    <h4 class="font-serif text-2xl mb-4" data-sd-id="238">Vijaya Krishna Jewellers</h4>
+                    <p class="text-[13px] text-white/70 font-light italic mb-8" data-sd-id="239">"Your jewellery is our passion."</p>
+                    <div class="space-y-4 text-[13px] text-white/80 font-light" data-sd-id="240">
+                        <div class="flex items-start gap-3" data-sd-id="241">
+                            <iconify-icon icon="lucide:map-pin" class="text-lg mt-0.5"></iconify-icon>
+                            <span data-sd-id="242">11/216, Nehru Bazaar, Madanapalle, 517325</span>
+                        </div>
+                        <div class="flex items-center gap-3" data-sd-id="243">
+                            <iconify-icon icon="lucide:phone" class="text-lg"></iconify-icon>
+                            <span data-sd-id="244">9441136231</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full border-t border-white/10 py-8 flex flex-col items-center gap-4" data-sd-id="245">
+                <p class="text-[11px] text-white/40 tracking-widest uppercase" data-sd-id="246">
+                    © 2024 Vijaya Krishna Jewellers. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+</body></html>
+```
+
+Please reference this design and implement it into our codebase; Try to understand the structure, which part of our codebase is relevant and implement
