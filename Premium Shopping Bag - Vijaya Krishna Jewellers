@@ -1,0 +1,376 @@
+Page: Premium Shopping Bag - Vijaya Krishna Jewellers
+
+```html
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Bag | Vijaya Krishna Jewellers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary: #7A1118;
+            --primary-hover: #9B1C24;
+            --charcoal: #1C1C1C;
+            --warm-white: #FEFBF9;
+            --border: #E8E5E2;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--charcoal);
+            background-color: #FFFFFF;
+            margin: 0;
+        }
+
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-filled {
+            background-color: var(--primary);
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-filled:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .sticky-summary {
+            position: sticky;
+            top: 100px;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Announcement Bar -->
+    <div class="w-full h-10 bg-white flex items-center justify-center border-b border-[#E8E5E2] px-4" data-sd-id="1">
+        <p class="text-[11px] md:text-[12px] tracking-widest font-medium text-[#7A1118] uppercase" data-sd-id="2">
+            Personalised jewellery consultation | Visit our Madanapalle store | Book your appointment
+        </p>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-[#E8E5E2] w-full h-24 flex items-center" data-sd-id="3">
+        <div class="max-w-[1440px] mx-auto w-full px-6 md:px-12 flex items-center justify-between" data-sd-id="4">
+            <!-- Logo & Brand -->
+            <a href="#" id="header-logo-link" class="flex items-center gap-4 group" data-sd-id="5">
+                <div class="w-20 h-20 bg-[#FFF5F3] rounded-full flex items-center justify-center p-1 border border-[#7A1118]/10 shrink-0 shadow-sm" data-sd-id="6">
+                    <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/43025c08-4082-4a51-be13-74c2c6004878/1787580136682-c6c007e9/Screenshot_2025-05-27_at_10.32.13_AM.png" alt="Vijaya Krishna Jewellers" class="h-14 w-auto object-contain" data-sd-id="7">
+                </div>
+                <div class="hidden md:block" data-sd-id="8">
+                    <h1 class="font-serif text-2xl font-bold leading-tight tracking-tight text-[#1C1C1C]" data-sd-id="9">VIJAYA KRISHNA</h1>
+                    <p class="text-[11px] tracking-[0.25em] uppercase font-medium text-[#7A1118]" data-sd-id="10">Jewellers</p>
+                </div>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="hidden lg:flex items-center gap-8" data-sd-id="11">
+                <a href="#" id="nav-shop-link" class="nav-link text-sm font-medium tracking-wide" data-sd-id="12">Shop</a>
+                <a href="#" id="nav-collections-link" class="nav-link text-sm font-medium tracking-wide" data-sd-id="13">Collections</a>
+                <a href="#" id="nav-occasions-link" class="nav-link text-sm font-medium tracking-wide" data-sd-id="14">Occasions</a>
+                <a href="#" id="nav-gifts-link" class="nav-link text-sm font-medium tracking-wide" data-sd-id="15">Gifts</a>
+                <a href="#" id="nav-new-arrivals-link" class="nav-link text-sm font-medium tracking-wide" data-sd-id="16">New Arrivals</a>
+                <a href="#" id="nav-services-link" class="nav-link text-sm font-medium tracking-wide" data-sd-id="17">Services</a>
+                <a href="#" id="nav-discover-link" class="nav-link text-sm font-medium tracking-wide" data-sd-id="18">Discover</a>
+            </nav>
+
+            <!-- Utilities -->
+            <div class="flex items-center gap-6 text-[#7A1118]" data-sd-id="19">
+                <button id="btn-search" class="hover:scale-115 transition-transform" data-sd-id="20"><iconify-icon icon="lucide:search" width="20"></iconify-icon></button>
+                <a href="#" id="nav-wishlist-link" class="hover:scale-115 transition-transform" data-sd-id="21"><iconify-icon icon="lucide:heart" width="20"></iconify-icon></a>
+                <a href="#" id="nav-account-link" class="hover:scale-115 transition-transform" data-sd-id="22"><iconify-icon icon="lucide:user" width="20"></iconify-icon></a>
+                <a href="#" id="nav-cart-link" class="hover:scale-115 transition-transform relative" data-sd-id="23">
+                    <iconify-icon icon="lucide:shopping-bag" width="20"></iconify-icon>
+                    <span class="absolute -top-1 -right-1 bg-[#7A1118] text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full" data-sd-id="24">2</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-[1440px] mx-auto px-6 md:px-20 py-12" data-sd-id="25">
+        
+        <!-- Breadcrumbs -->
+        <nav class="flex text-[12px] uppercase tracking-widest text-gray-400 mb-8" data-sd-id="26">
+            <a href="#" id="breadcrumb-home" class="hover:text-[#7A1118]" data-sd-id="27">Home</a>
+            <span class="mx-2" data-sd-id="28">/</span>
+            <span class="text-[#1C1C1C]" data-sd-id="29">Shopping Bag</span>
+        </nav>
+
+        <h2 class="font-serif text-4xl text-[#7A1118] mb-12" data-sd-id="30">Your Shopping Bag</h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-10 gap-12 items-start" data-sd-id="31">
+            
+            <!-- Left Column: Cart Items -->
+            <div class="lg:col-span-7 space-y-8" data-sd-id="32">
+                
+                <!-- Trust Messaging Strip -->
+                <div class="bg-[#FEFBF9] border border-[#E8E5E2] p-4 flex flex-col md:flex-row justify-around gap-4 md:gap-0" data-sd-id="33">
+                    <div class="flex items-center gap-3" data-sd-id="34">
+                        <iconify-icon icon="lucide:truck" class="text-[#7A1118] text-xl"></iconify-icon>
+                        <span class="text-[12px] tracking-wide text-[#1C1C1C]" data-sd-id="35">Free delivery on orders above ₹10,000</span>
+                    </div>
+                    <div class="flex items-center gap-3" data-sd-id="36">
+                        <iconify-icon icon="lucide:rotate-cw" class="text-[#7A1118] text-xl"></iconify-icon>
+                        <span class="text-[12px] tracking-wide text-[#1C1C1C]" data-sd-id="37">Easy 30-day exchange</span>
+                    </div>
+                    <div class="flex items-center gap-3" data-sd-id="38">
+                        <iconify-icon icon="lucide:shield-check" class="text-[#7A1118] text-xl"></iconify-icon>
+                        <span class="text-[12px] tracking-wide text-[#1C1C1C]" data-sd-id="39">Secure &amp; insured payments</span>
+                    </div>
+                </div>
+
+                <!-- Items List -->
+                <div class="bg-white border border-[#E8E5E2] divide-y divide-[#E8E5E2]" data-sd-id="40">
+                    
+                    <!-- Item 1 -->
+                    <div class="p-6 flex flex-col sm:flex-row gap-6 hover:bg-[#FEFBF9]/50 transition-colors group" data-sd-id="41">
+                        <div class="w-32 h-32 bg-[#FEFBF9] border border-[#E8E5E2] shrink-0 flex items-center justify-center p-2" data-sd-id="42">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&amp;fit=crop&amp;q=80&amp;w=400" alt="Floral Diamond Ring" class="w-full h-full object-contain mix-blend-multiply" data-sd-id="43">
+                        </div>
+                        <div class="flex-1" data-sd-id="44">
+                            <div class="flex justify-between items-start mb-2" data-sd-id="45">
+                                <div data-sd-id="46">
+                                    <h3 class="text-sm font-bold text-[#1C1C1C]" data-sd-id="47">Floral Diamond Ring</h3>
+                                    <p class="text-[12px] text-gray-500 mt-1" data-sd-id="48">18K Rose Gold · 0.25 ct Diamond</p>
+                                    <p class="text-[12px] text-gray-500" data-sd-id="49">Size: 14</p>
+                                </div>
+                                <div class="text-right" data-sd-id="50">
+                                    <span class="text-sm font-bold text-[#1C1C1C]" data-sd-id="51">₹42,500</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-wrap items-center justify-between mt-6 gap-4" data-sd-id="52">
+                                <div class="flex items-center border border-[#E8E5E2]" data-sd-id="53">
+                                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors border-r border-[#E8E5E2]" data-sd-id="54"><iconify-icon icon="lucide:minus" width="14"></iconify-icon></button>
+                                    <input type="number" value="1" class="w-10 text-center text-[12px] font-semibold bg-transparent border-none outline-none" readonly="" data-sd-id="55">
+                                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors border-l border-[#E8E5E2]" data-sd-id="56"><iconify-icon icon="lucide:plus" width="14"></iconify-icon></button>
+                                </div>
+                                
+                                <div class="flex gap-6" data-sd-id="57">
+                                    <button class="text-[12px] uppercase tracking-widest text-gray-400 hover:text-[#1C1C1C] transition-colors underline-offset-4 hover:underline" data-sd-id="58">Save for later</button>
+                                    <button class="text-[12px] uppercase tracking-widest text-[#7A1118] hover:text-[#9B1C24] transition-colors underline-offset-4 hover:underline" data-sd-id="59">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 text-right" data-sd-id="60">
+                                <p class="text-[11px] text-gray-400" data-sd-id="61">Subtotal: <span class="text-[#1C1C1C] font-medium" data-sd-id="62">₹42,500</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="p-6 flex flex-col sm:flex-row gap-6 hover:bg-[#FEFBF9]/50 transition-colors group" data-sd-id="63">
+                        <div class="w-32 h-32 bg-[#FEFBF9] border border-[#E8E5E2] shrink-0 flex items-center justify-center p-2" data-sd-id="64">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&amp;fit=crop&amp;q=80&amp;w=400" alt="Classic Pendant Set" class="w-full h-full object-contain mix-blend-multiply" data-sd-id="65">
+                        </div>
+                        <div class="flex-1" data-sd-id="66">
+                            <div class="flex justify-between items-start mb-2" data-sd-id="67">
+                                <div data-sd-id="68">
+                                    <h3 class="text-sm font-bold text-[#1C1C1C]" data-sd-id="69">Infinite Aura Necklace</h3>
+                                    <p class="text-[12px] text-gray-500 mt-1" data-sd-id="70">22K Yellow Gold · Handcrafted</p>
+                                </div>
+                                <div class="text-right" data-sd-id="71">
+                                    <span class="text-sm font-bold text-[#1C1C1C]" data-sd-id="72">₹86,200</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-wrap items-center justify-between mt-6 gap-4" data-sd-id="73">
+                                <div class="flex items-center border border-[#E8E5E2]" data-sd-id="74">
+                                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors border-r border-[#E8E5E2]" data-sd-id="75"><iconify-icon icon="lucide:minus" width="14"></iconify-icon></button>
+                                    <input type="number" value="1" class="w-10 text-center text-[12px] font-semibold bg-transparent border-none outline-none" readonly="" data-sd-id="76">
+                                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors border-l border-[#E8E5E2]" data-sd-id="77"><iconify-icon icon="lucide:plus" width="14"></iconify-icon></button>
+                                </div>
+                                
+                                <div class="flex gap-6" data-sd-id="78">
+                                    <button class="text-[12px] uppercase tracking-widest text-gray-400 hover:text-[#1C1C1C] transition-colors underline-offset-4 hover:underline" data-sd-id="79">Save for later</button>
+                                    <button class="text-[12px] uppercase tracking-widest text-[#7A1118] hover:text-[#9B1C24] transition-colors underline-offset-4 hover:underline" data-sd-id="80">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 text-right" data-sd-id="81">
+                                <p class="text-[11px] text-gray-400" data-sd-id="82">Subtotal: <span class="text-[#1C1C1C] font-medium" data-sd-id="83">₹86,200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delivery Note -->
+                <div class="flex items-center gap-3 p-4 bg-white border border-[#E8E5E2]" data-sd-id="84">
+                    <iconify-icon icon="lucide:truck" class="text-gray-400"></iconify-icon>
+                    <p class="text-[12px] text-gray-600 italic" data-sd-id="85">Estimated delivery: 3-5 business days across India.</p>
+                </div>
+            </div>
+
+            <!-- Right Column: Order Summary -->
+            <div class="lg:col-span-3 sticky-summary" data-sd-id="86">
+                <div class="bg-white border border-[#E8E5E2] p-8" data-sd-id="87">
+                    <h3 class="font-serif text-xl text-[#1C1C1C] mb-8" data-sd-id="88">Order Summary</h3>
+                    
+                    <div class="space-y-4" data-sd-id="89">
+                        <div class="flex justify-between text-sm" data-sd-id="90">
+                            <span class="text-gray-500" data-sd-id="91">Subtotal</span>
+                            <span class="font-medium" data-sd-id="92">₹1,28,700</span>
+                        </div>
+                        <div class="flex justify-between text-sm" data-sd-id="93">
+                            <span class="text-gray-500" data-sd-id="94">Estimated GST (18%)</span>
+                            <span class="font-medium" data-sd-id="95">₹23,166</span>
+                        </div>
+                        <div class="flex justify-between text-sm" data-sd-id="96">
+                            <span class="text-gray-500" data-sd-id="97">Shipping</span>
+                            <span class="font-medium text-green-600" data-sd-id="98">FREE</span>
+                        </div>
+                        
+                        <div class="pt-4 border-t border-[#E8E5E2] flex justify-between" data-sd-id="99">
+                            <span class="text-base font-bold text-[#1C1C1C]" data-sd-id="100">Total</span>
+                            <span class="text-lg font-bold text-[#7A1118]" data-sd-id="101">₹1,51,866</span>
+                        </div>
+                    </div>
+
+                    <p class="text-[11px] text-gray-400 italic mt-4 mb-8" data-sd-id="102">
+                        Prices include applicable taxes. GST calculated at checkout based on shipping address.
+                    </p>
+
+                    <div class="space-y-3" data-sd-id="103">
+                        <a href="#" id="btn-checkout" class="btn-filled w-full block text-center py-4 text-sm font-bold tracking-widest uppercase" data-sd-id="104">
+                            Proceed to Checkout
+                        </a>
+                        <a href="#" id="btn-continue" class="btn-outline w-full block text-center py-4 text-sm font-bold tracking-widest uppercase" data-sd-id="105">
+                            Continue Shopping
+                        </a>
+                    </div>
+
+                    <!-- Promo Code -->
+                    <div class="mt-8 pt-8 border-t border-[#E8E5E2]" data-sd-id="106">
+                        <div class="flex gap-2" data-sd-id="107">
+                            <input type="text" placeholder="Have a promo code?" class="flex-1 bg-[#FEFBF9] border border-[#E8E5E2] px-3 py-2 text-[12px] focus:outline-none focus:border-[#7A1118]" data-sd-id="108">
+                            <button class="px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-[#7A1118] border border-[#7A1118] hover:bg-[#7A1118] hover:text-white transition-all" data-sd-id="109">Apply</button>
+                        </div>
+                        <p class="text-[10px] text-gray-400 mt-2" data-sd-id="110">Discounts will be applied at checkout</p>
+                    </div>
+
+                    <!-- Trust Badge -->
+                    <div class="mt-10 flex flex-col items-center gap-2" data-sd-id="111">
+                        <div class="flex items-center gap-2 text-[11px] text-gray-500 uppercase tracking-widest" data-sd-id="112">
+                            <iconify-icon icon="lucide:lock" class="text-[#7A1118]"></iconify-icon>
+                            <span data-sd-id="113">100% Secure &amp; Insured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-[#7A1118] text-white pt-20 mt-20" data-sd-id="114">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16" data-sd-id="115">
+            <!-- Shop Col -->
+            <div data-sd-id="116">
+                <h4 class="text-sm font-bold uppercase tracking-widest mb-8" data-sd-id="117">Shop</h4>
+                <ul class="space-y-4 text-[13px] text-white/70 font-light" data-sd-id="118">
+                    <li data-sd-id="119"><a href="#" class="hover:text-white transition-colors" data-sd-id="120">Gold Jewellery</a></li>
+                    <li data-sd-id="121"><a href="#" class="hover:text-white transition-colors" data-sd-id="122">Diamond Jewellery</a></li>
+                    <li data-sd-id="123"><a href="#" class="hover:text-white transition-colors" data-sd-id="124">Engagement Rings</a></li>
+                    <li data-sd-id="125"><a href="#" class="hover:text-white transition-colors" data-sd-id="126">Earrings</a></li>
+                    <li data-sd-id="127"><a href="#" class="hover:text-white transition-colors" data-sd-id="128">Necklaces</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Col -->
+            <div data-sd-id="129">
+                <h4 class="text-sm font-bold uppercase tracking-widest mb-8" data-sd-id="130">Customer Service</h4>
+                <ul class="space-y-4 text-[13px] text-white/70 font-light" data-sd-id="131">
+                    <li data-sd-id="132"><a href="#" class="hover:text-white transition-colors" data-sd-id="133">Contact Us</a></li>
+                    <li data-sd-id="134"><a href="#" class="hover:text-white transition-colors" data-sd-id="135">Shipping Policy</a></li>
+                    <li data-sd-id="136"><a href="#" class="hover:text-white transition-colors" data-sd-id="137">Returns &amp; Exchanges</a></li>
+                    <li data-sd-id="138"><a href="#" class="hover:text-white transition-colors" data-sd-id="139">Order Tracking</a></li>
+                    <li data-sd-id="140"><a href="#" class="hover:text-white transition-colors" data-sd-id="141">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Col -->
+            <div data-sd-id="142">
+                <h4 class="text-sm font-bold uppercase tracking-widest mb-8" data-sd-id="143">Services</h4>
+                <ul class="space-y-4 text-[13px] text-white/70 font-light" data-sd-id="144">
+                    <li data-sd-id="145"><a href="#" class="hover:text-white transition-colors" data-sd-id="146">Book Appointment</a></li>
+                    <li data-sd-id="147"><a href="#" class="hover:text-white transition-colors" data-sd-id="148">Try at Home</a></li>
+                    <li data-sd-id="149"><a href="#" class="hover:text-white transition-colors" data-sd-id="150">Custom Jewellery</a></li>
+                    <li data-sd-id="151"><a href="#" class="hover:text-white transition-colors" data-sd-id="152">Gold Exchange</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Info -->
+            <div data-sd-id="153">
+                <h4 class="font-serif text-2xl mb-4" data-sd-id="154">Vijaya Krishna Jewellers</h4>
+                <p class="text-[13px] text-white/70 font-light italic mb-8" data-sd-id="155">"Your jewellery is our passion."</p>
+                <div class="space-y-6 text-[13px] text-white/80 font-light" data-sd-id="156">
+                    <div class="flex items-start gap-3" data-sd-id="157">
+                        <iconify-icon icon="lucide:map-pin" class="text-lg mt-0.5"></iconify-icon>
+                        <span data-sd-id="158">11/216, Nehru Bazaar,<br>Madanapalle, 517325</span>
+                    </div>
+                    <div class="flex items-center gap-3" data-sd-id="159">
+                        <iconify-icon icon="lucide:phone" class="text-lg"></iconify-icon>
+                        <span data-sd-id="160">9441136231</span>
+                    </div>
+                    <div class="pt-4" data-sd-id="161">
+                        <p class="text-[11px] uppercase tracking-[0.2em] font-bold text-white/50 mb-1" data-sd-id="162">Proprietor</p>
+                        <p class="text-base font-medium" data-sd-id="163">V Ananda Kumar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full border-t border-white/10 py-8 flex flex-col items-center gap-4" data-sd-id="164">
+            <p class="text-[11px] text-white/40 tracking-widest uppercase" data-sd-id="165">
+                © 2024 Vijaya Krishna Jewellers. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+</body></html>
+```
+
+Please reference this design and implement it into our codebase; Try to understand the structure, which part of our codebase is relevant and implement
