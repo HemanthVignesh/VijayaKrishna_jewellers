@@ -1,0 +1,648 @@
+Page: Refined Heritage Homepage - Vijaya Krishna Jewellers
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijaya Krishna Jewellers | Your jewellery is our passion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary: #7A1118;
+            --primary-hover: #9B1C24;
+            --charcoal: #1C1C1C;
+            --warm-white: #FEFBF9;
+            --border: #E8E5E2;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--charcoal);
+            background-color: white;
+        }
+
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .product-card:hover .add-to-bag {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-filled {
+            background-color: var(--primary);
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-filled:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col overflow-x-hidden">
+        <!-- Announcement Bar -->
+        <div class="w-full h-10 bg-white flex items-center justify-center border-b border-[#E8E5E2] px-4">
+            <p class="text-[11px] md:text-[12px] tracking-widest font-medium text-[#7A1118] uppercase">
+                Personalised jewellery consultation | Visit our Madanapalle store | Book your appointment
+            </p>
+        </div>
+
+        <!-- Header -->
+        <header class="sticky top-0 z-50 bg-white border-b border-[#E8E5E2] w-full h-24 flex items-center">
+            <div class="max-w-[1440px] mx-auto w-full px-6 md:px-12 flex items-center justify-between">
+                <!-- Logo & Brand -->
+                <a href="#" id="header-logo-link" class="flex items-center gap-4 group">
+                    <div class="w-20 h-20 bg-[#FFF5F3] rounded-full flex items-center justify-center p-1 border border-[#7A1118]/10 shrink-0 shadow-sm">
+                        <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/43025c08-4082-4a51-be13-74c2c6004878/1787580136682-c6c007e9/Screenshot_2025-05-27_at_10.32.13_AM.png" 
+                             alt="Vijaya Krishna Jewellers" 
+                             class="h-14 w-auto object-contain">
+                    </div>
+                    <div class="hidden md:block">
+                        <h1 class="font-serif text-2xl font-bold leading-tight tracking-tight text-[#1C1C1C]">VIJAYA KRISHNA</h1>
+                        <p class="text-[11px] tracking-[0.25em] uppercase font-medium text-[#7A1118]">Jewellers</p>
+                    </div>
+                </a>
+
+                <!-- Navigation -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#" id="nav-shop-link" class="nav-link text-sm font-medium tracking-wide">Shop</a>
+                    <a href="#" id="nav-collections-link" class="nav-link text-sm font-medium tracking-wide">Collections</a>
+                    <a href="#" id="nav-occasions-link" class="nav-link text-sm font-medium tracking-wide">Occasions</a>
+                    <a href="#" id="nav-gifts-link" class="nav-link text-sm font-medium tracking-wide">Gifts</a>
+                    <a href="#" id="nav-new-arrivals-link" class="nav-link text-sm font-medium tracking-wide text-[#7A1118]">New Arrivals</a>
+                    <a href="#" id="nav-services-link" class="nav-link text-sm font-medium tracking-wide">Services</a>
+                    <a href="#" id="nav-discover-link" class="nav-link text-sm font-medium tracking-wide">Discover</a>
+                </nav>
+
+                <!-- Utilities -->
+                <div class="flex items-center gap-6 text-[#7A1118]">
+                    <button id="header-search-btn" class="hover:scale-115 transition-transform duration-300"><iconify-icon icon="lucide:search" width="22"></iconify-icon></button>
+                    <a href="#" id="header-wishlist-link" class="hover:scale-115 transition-transform duration-300"><iconify-icon icon="lucide:heart" width="22"></iconify-icon></a>
+                    <a href="#" id="header-account-link" class="hover:scale-115 transition-transform duration-300"><iconify-icon icon="lucide:user" width="22"></iconify-icon></a>
+                    <a href="#" id="header-cart-link" class="hover:scale-115 transition-transform duration-300 relative">
+                        <iconify-icon icon="lucide:shopping-bag" width="22"></iconify-icon>
+                        <span class="absolute -top-1.5 -right-1.5 bg-[#7A1118] text-white text-[9px] w-4.5 h-4.5 flex items-center justify-center rounded-full">0</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="w-full h-[700px] bg-[#FEFBF9] flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 h-full flex items-center justify-center p-12">
+                <div class="relative w-full max-w-[550px]">
+                    <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&q=80&w=1200" 
+                         alt="Vijaya Krishna Jewellers Masterpiece"
+                         class="w-full h-auto object-contain">
+                    <div class="absolute bottom-4 left-0 w-full text-center">
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-gray-400">Professional Vijaya Krishna Jewellers photography (placeholder)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 h-full flex flex-col justify-center px-12 md:px-24 py-12 bg-[#FEFBF9]">
+                <h2 class="font-serif text-6xl md:text-7xl text-[#7A1118] mb-8 leading-[1.05] tracking-tight">
+                    Your jewellery is <br>our passion.
+                </h2>
+                <p class="text-xl text-[#1C1C1C] font-light mb-12 max-w-lg leading-relaxed">
+                    Timeless craftsmanship for life's most precious moments. Handcrafted excellence from the heritage of Madanapalle.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#" id="hero-cta-explore" class="btn-filled px-12 py-5 text-xs font-bold tracking-[0.2em] uppercase text-center">Explore Jewellery</a>
+                    <a href="#" id="hero-cta-collections" class="btn-outline px-12 py-5 text-xs font-bold tracking-[0.2em] uppercase text-center">Discover Collections</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop By Category -->
+        <section class="w-full py-24 px-6 md:px-20 bg-white">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="flex flex-col items-center mb-20">
+                    <h2 class="font-serif text-4xl text-center mb-4">Shop By Category</h2>
+                    <div class="w-12 h-0.5 bg-[#7A1118]"></div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                    <a href="#" id="category-rings" class="group text-center">
+                        <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] mb-6 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=400" alt="Rings" class="w-2/3 h-2/3 object-contain transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest transition-colors group-hover:text-[#7A1118]">Rings</p>
+                    </a>
+                    <a href="#" id="category-earrings" class="group text-center">
+                        <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] mb-6 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&q=80&w=400" alt="Earrings" class="w-2/3 h-2/3 object-contain transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest transition-colors group-hover:text-[#7A1118]">Earrings</p>
+                    </a>
+                    <a href="#" id="category-necklaces" class="group text-center">
+                        <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] mb-6 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=400" alt="Necklaces" class="w-2/3 h-2/3 object-contain transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest transition-colors group-hover:text-[#7A1118]">Necklaces</p>
+                    </a>
+                    <a href="#" id="category-bangles" class="group text-center">
+                        <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] mb-6 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=400" alt="Bangles" class="w-2/3 h-2/3 object-contain transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest transition-colors group-hover:text-[#7A1118]">Bangles</p>
+                    </a>
+                    <a href="#" id="category-bracelets" class="group text-center">
+                        <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] mb-6 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1573408302185-91ff67b4205f?auto=format&fit=crop&q=80&w=400" alt="Bracelets" class="w-2/3 h-2/3 object-contain transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest transition-colors group-hover:text-[#7A1118]">Bracelets</p>
+                    </a>
+                    <a href="#" id="category-pendants" class="group text-center">
+                        <div class="aspect-square bg-[#FEFBF9] border border-[#E8E5E2] mb-6 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce33e?auto=format&fit=crop&q=80&w=400" alt="Pendants" class="w-2/3 h-2/3 object-contain transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest transition-colors group-hover:text-[#7A1118]">Pendants</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop By Occasion -->
+        <section class="w-full py-24 px-6 md:px-20 bg-[#FEFBF9]">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="flex flex-col items-center mb-20">
+                    <h2 class="font-serif text-4xl text-center mb-4">Jewellery for Every Moment</h2>
+                    <div class="w-12 h-0.5 bg-[#7A1118]"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <a href="#" id="occasion-wedding" class="relative h-[320px] overflow-hidden group shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1512163143273-bde0e3cc7407?auto=format&fit=crop&q=80&w=800" alt="Wedding" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-500 flex items-center justify-center">
+                            <span class="font-serif text-4xl text-white tracking-wide">Wedding</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-0 h-1.5 bg-[#7A1118] transition-all duration-700 group-hover:w-full"></div>
+                    </a>
+                    <a href="#" id="occasion-engagement" class="relative h-[320px] overflow-hidden group shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1623939012331-9954ec163249?auto=format&fit=crop&q=80&w=800" alt="Engagement" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-500 flex items-center justify-center">
+                            <span class="font-serif text-4xl text-white tracking-wide">Engagement</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-0 h-1.5 bg-[#7A1118] transition-all duration-700 group-hover:w-full"></div>
+                    </a>
+                    <a href="#" id="occasion-anniversary" class="relative h-[320px] overflow-hidden group shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1615655406736-b37c4fabf923?auto=format&fit=crop&q=80&w=800" alt="Anniversary" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-500 flex items-center justify-center">
+                            <span class="font-serif text-4xl text-white tracking-wide">Anniversary</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-0 h-1.5 bg-[#7A1118] transition-all duration-700 group-hover:w-full"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals -->
+        <section class="w-full py-24 bg-white">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-20 relative">
+                <div class="flex flex-col items-center mb-20">
+                    <h2 class="font-serif text-4xl text-center mb-4">New Arrivals</h2>
+                    <div class="w-12 h-0.5 bg-[#7A1118]"></div>
+                </div>
+                <div class="flex gap-8 overflow-x-auto hide-scrollbar pb-12">
+                    <!-- Product Card -->
+                    <div class="product-card min-w-[300px] w-[300px] bg-[#FEFBF9] border border-[#E8E5E2] p-6 relative flex flex-col transition-all duration-500 hover:shadow-lg">
+                        <button class="absolute top-6 right-6 text-[#7A1118] hover:scale-125 transition-transform">
+                            <iconify-icon icon="lucide:heart" width="20"></iconify-icon>
+                        </button>
+                        <div class="w-full aspect-square mb-6 overflow-hidden bg-white">
+                            <img src="https://images.unsplash.com/photo-1596944214946-174074b6f99e?auto=format&fit=crop&q=80&w=400" alt="Floral Diamond Ring" class="w-full h-full object-contain transition-transform duration-700 hover:scale-110">
+                        </div>
+                        <div class="flex flex-col flex-grow">
+                            <h3 class="text-sm font-semibold mb-1 text-[#1C1C1C]">Floral Diamond Ring</h3>
+                            <p class="text-[11px] text-gray-500 mb-4">18K Gold · 0.15 ct</p>
+                            <p class="text-lg font-bold mb-6 text-[#1C1C1C]">₹28,500</p>
+                            <button id="add-to-bag-ring" class="add-to-bag mt-auto w-full py-3 border border-[#7A1118] text-[#7A1118] text-[11px] font-bold uppercase tracking-[0.2em] transition-all">Add to Bag</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="product-card min-w-[300px] w-[300px] bg-[#FEFBF9] border border-[#E8E5E2] p-6 relative flex flex-col transition-all duration-500 hover:shadow-lg">
+                        <button class="absolute top-6 right-6 text-[#7A1118] hover:scale-125 transition-transform">
+                            <iconify-icon icon="lucide:heart" width="20"></iconify-icon>
+                        </button>
+                        <div class="w-full aspect-square mb-6 overflow-hidden bg-white">
+                            <img src="https://images.unsplash.com/photo-1598560917807-1bae44bd2be8?auto=format&fit=crop&q=80&w=400" alt="Classic Pendant Set" class="w-full h-full object-contain transition-transform duration-700 hover:scale-110">
+                        </div>
+                        <div class="flex flex-col flex-grow">
+                            <h3 class="text-sm font-semibold mb-1 text-[#1C1C1C]">Classic Pendant Set</h3>
+                            <p class="text-[11px] text-gray-500 mb-4">22K Gold · Handcrafted</p>
+                            <p class="text-lg font-bold mb-6 text-[#1C1C1C]">₹42,500</p>
+                            <button id="add-to-bag-pendant" class="add-to-bag mt-auto w-full py-3 border border-[#7A1118] text-[#7A1118] text-[11px] font-bold uppercase tracking-[0.2em] transition-all">Add to Bag</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="product-card min-w-[300px] w-[300px] bg-[#FEFBF9] border border-[#E8E5E2] p-6 relative flex flex-col transition-all duration-500 hover:shadow-lg">
+                        <button class="absolute top-6 right-6 text-[#7A1118] hover:scale-125 transition-transform">
+                            <iconify-icon icon="lucide:heart" width="20"></iconify-icon>
+                        </button>
+                        <div class="w-full aspect-square mb-6 overflow-hidden bg-white">
+                            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&q=80&w=400" alt="Modern Stud Earrings" class="w-full h-full object-contain transition-transform duration-700 hover:scale-110">
+                        </div>
+                        <div class="flex flex-col flex-grow">
+                            <h3 class="text-sm font-semibold mb-1 text-[#1C1C1C]">Modern Stud Earrings</h3>
+                            <p class="text-[11px] text-gray-500 mb-4">18K Rose Gold · 0.10 ct</p>
+                            <p class="text-lg font-bold mb-6 text-[#1C1C1C]">₹19,200</p>
+                            <button id="add-to-bag-earrings" class="add-to-bag mt-auto w-full py-3 border border-[#7A1118] text-[#7A1118] text-[11px] font-bold uppercase tracking-[0.2em] transition-all">Add to Bag</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="product-card min-w-[300px] w-[300px] bg-[#FEFBF9] border border-[#E8E5E2] p-6 relative flex flex-col transition-all duration-500 hover:shadow-lg">
+                        <button class="absolute top-6 right-6 text-[#7A1118] hover:scale-125 transition-transform">
+                            <iconify-icon icon="lucide:heart" width="20"></iconify-icon>
+                        </button>
+                        <div class="w-full aspect-square mb-6 overflow-hidden bg-white">
+                            <img src="https://images.unsplash.com/photo-1629227306219-42e2c55485e8?auto=format&fit=crop&q=80&w=400" alt="Infinity Diamond Bangle" class="w-full h-full object-contain transition-transform duration-700 hover:scale-110">
+                        </div>
+                        <div class="flex flex-col flex-grow">
+                            <h3 class="text-sm font-semibold mb-1 text-[#1C1C1C]">Infinity Diamond Bangle</h3>
+                            <p class="text-[11px] text-gray-500 mb-4">14K Gold · 0.25 ct</p>
+                            <p class="text-lg font-bold mb-6 text-[#1C1C1C]">₹65,000</p>
+                            <button id="add-to-bag-bangle" class="add-to-bag mt-auto w-full py-3 border border-[#7A1118] text-[#7A1118] text-[11px] font-bold uppercase tracking-[0.2em] transition-all">Add to Bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers -->
+        <section class="w-full py-24 bg-[#FEFBF9]">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-20">
+                <div class="flex flex-col items-center mb-20">
+                    <h2 class="font-serif text-4xl text-center mb-4">Our Most Loved Pieces</h2>
+                    <p class="text-sm text-gray-500 uppercase tracking-widest mb-6">Best Sellers</p>
+                    <div class="w-12 h-0.5 bg-[#7A1118]"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Best Seller Card 1 -->
+                    <div class="product-card bg-white border border-[#E8E5E2] p-6 relative transition-all duration-500 hover:shadow-lg">
+                        <div class="absolute top-6 left-6 z-10 bg-[#7A1118] text-white text-[9px] font-bold uppercase tracking-widest px-2 py-1">Bestseller</div>
+                        <button class="absolute top-6 right-6 text-[#7A1118]"><iconify-icon icon="lucide:heart" width="18"></iconify-icon></button>
+                        <img src="https://images.unsplash.com/photo-1596944214946-174074b6f99e?auto=format&fit=crop&q=80&w=300" alt="Gold Ring" class="w-full aspect-square object-contain mb-6">
+                        <h3 class="text-sm font-semibold mb-1">Signature Solitaire Ring</h3>
+                        <p class="text-[11px] text-gray-500 mb-6">18K Gold · 0.50 ct</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-base font-bold">₹89,500</span>
+                            <a href="#" id="view-bestseller-1" class="text-[10px] font-bold uppercase tracking-widest text-[#7A1118] hover:underline">View Details</a>
+                        </div>
+                    </div>
+                    <!-- More cards would repeat here... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Collection -->
+        <section class="w-full flex flex-col lg:flex-row items-center bg-white">
+            <div class="w-full lg:w-3/5 p-6 md:p-20">
+                <img src="https://images.unsplash.com/photo-1543290950-71744d10b81d?auto=format&fit=crop&q=80&w=1200" alt="Heritage Collection" class="w-full h-auto object-cover">
+            </div>
+            <div class="w-full lg:w-2/5 p-8 md:p-20 flex flex-col justify-center border-l border-[#E8E5E2] bg-[#FEFBF9]">
+                <h2 class="font-serif text-5xl text-[#7A1118] mb-8 leading-tight">The Heritage <br>Collection</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-10 font-light">
+                    Inspired by timeless Indian artistry and crafted for generations to come. Each piece tells a story of tradition, elegance, and uncompromising quality. Discover jewellery that resonates with our roots.
+                </p>
+                <a href="#" id="heritage-collection-cta" class="btn-filled px-12 py-5 text-xs font-bold tracking-[0.2em] uppercase self-start">Explore Collection</a>
+            </div>
+        </section>
+
+        <!-- Shop By Budget -->
+        <section class="w-full py-24 px-6 md:px-20 bg-white">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="flex flex-col items-center mb-20">
+                    <h2 class="font-serif text-4xl text-center mb-4">Find Your Perfect Price</h2>
+                    <div class="w-12 h-0.5 bg-[#7A1118]"></div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                    <a href="#" id="budget-10k" class="group flex flex-col items-center p-8 bg-[#FEFBF9] border border-[#E8E5E2] transition-all hover:border-[#7A1118]">
+                        <span class="text-2xl font-serif text-[#7A1118] mb-2">₹10k</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Under ₹10,000</span>
+                    </a>
+                    <a href="#" id="budget-25k" class="group flex flex-col items-center p-8 bg-[#FEFBF9] border border-[#E8E5E2] transition-all hover:border-[#7A1118]">
+                        <span class="text-2xl font-serif text-[#7A1118] mb-2">₹25k</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Under ₹25,000</span>
+                    </a>
+                    <a href="#" id="budget-50k" class="group flex flex-col items-center p-8 bg-[#FEFBF9] border border-[#E8E5E2] transition-all hover:border-[#7A1118]">
+                        <span class="text-2xl font-serif text-[#7A1118] mb-2">₹50k</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Under ₹50,000</span>
+                    </a>
+                    <a href="#" id="budget-1l" class="group flex flex-col items-center p-8 bg-[#FEFBF9] border border-[#E8E5E2] transition-all hover:border-[#7A1118]">
+                        <span class="text-2xl font-serif text-[#7A1118] mb-2">₹1L</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Under ₹1,00,000</span>
+                    </a>
+                    <a href="#" id="budget-premium" class="group flex flex-col items-center p-8 bg-[#FEFBF9] border border-[#E8E5E2] transition-all hover:border-[#7A1118]">
+                        <span class="text-2xl font-serif text-[#7A1118] mb-2">₹1L+</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Premium Range</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="w-full py-24 px-6 md:px-20 bg-[#FEFBF9]">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="flex flex-col items-center mb-20">
+                    <h2 class="font-serif text-4xl text-center mb-4">Our Premium Services</h2>
+                    <div class="w-12 h-0.5 bg-[#7A1118]"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-10 border border-[#E8E5E2] flex flex-col items-center text-center transition-all duration-500 hover:shadow-xl group">
+                        <div class="w-20 h-20 rounded-full bg-[#FEFBF9] flex items-center justify-center mb-8 group-hover:bg-[#FFF5F3] transition-colors">
+                            <iconify-icon icon="lucide:home" class="text-4xl text-[#7A1118]"></iconify-icon>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-4">Try at Home</h3>
+                        <p class="text-sm text-gray-500 mb-8 leading-relaxed">Experience your jewellery before you decide. Book a home viewing session.</p>
+                        <a href="#" id="service-try-home" class="text-[#7A1118] text-xs font-bold uppercase tracking-[0.2em] hover:underline">Learn More</a>
+                    </div>
+                    <div class="bg-white p-10 border border-[#E8E5E2] flex flex-col items-center text-center transition-all duration-500 hover:shadow-xl group">
+                        <div class="w-20 h-20 rounded-full bg-[#FEFBF9] flex items-center justify-center mb-8 group-hover:bg-[#FFF5F3] transition-colors">
+                            <iconify-icon icon="lucide:calendar" class="text-4xl text-[#7A1118]"></iconify-icon>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-4">Book Appointment</h3>
+                        <p class="text-sm text-gray-500 mb-8 leading-relaxed">Receive personalized assistance from our experts in-store or online.</p>
+                        <a href="#" id="service-book-visit" class="text-[#7A1118] text-xs font-bold uppercase tracking-[0.2em] hover:underline">Learn More</a>
+                    </div>
+                    <div class="bg-white p-10 border border-[#E8E5E2] flex flex-col items-center text-center transition-all duration-500 hover:shadow-xl group">
+                        <div class="w-20 h-20 rounded-full bg-[#FEFBF9] flex items-center justify-center mb-8 group-hover:bg-[#FFF5F3] transition-colors">
+                            <iconify-icon icon="lucide:gem" class="text-4xl text-[#7A1118]"></iconify-icon>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-4">Custom Jewellery</h3>
+                        <p class="text-sm text-gray-500 mb-8 leading-relaxed">Create something uniquely yours with our master craftsmen.</p>
+                        <a href="#" id="service-custom-jewelry" class="text-[#7A1118] text-xs font-bold uppercase tracking-[0.2em] hover:underline">Learn More</a>
+                    </div>
+                    <div class="bg-white p-10 border border-[#E8E5E2] flex flex-col items-center text-center transition-all duration-500 hover:shadow-xl group">
+                        <div class="w-20 h-20 rounded-full bg-[#FEFBF9] flex items-center justify-center mb-8 group-hover:bg-[#FFF5F3] transition-colors">
+                            <iconify-icon icon="lucide:map-pin" class="text-4xl text-[#7A1118]"></iconify-icon>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-4">Store Locator</h3>
+                        <p class="text-sm text-gray-500 mb-8 leading-relaxed">Discover our full collection in person at our Madanapalle store.</p>
+                        <a href="#" id="service-store-loc" class="text-[#7A1118] text-xs font-bold uppercase tracking-[0.2em] hover:underline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Today's Gold Rate -->
+        <section class="w-full py-16 bg-white border-y border-[#E8E5E2]">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-20 flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="flex items-center gap-6">
+                    <div class="w-12 h-12 rounded-full border border-[#7A1118]/20 flex items-center justify-center">
+                        <iconify-icon icon="lucide:trending-up" class="text-2xl text-[#7A1118]"></iconify-icon>
+                    </div>
+                    <div>
+                        <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 mb-2">Today's Gold Rate</h2>
+                        <p class="text-2xl font-serif text-[#7A1118]">22K Gold · ₹6,500 <span class="text-sm font-sans text-gray-500 font-light tracking-normal uppercase">/ per gram</span></p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-10">
+                    <div class="hidden md:block h-12 w-px bg-[#E8E5E2]"></div>
+                    <a href="#" id="gold-rate-details" class="text-[11px] font-bold uppercase tracking-[0.2em] text-[#7A1118] border-b border-[#7A1118] pb-1">View Detailed Rate Card</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Story -->
+        <section class="w-full py-32 px-6 md:px-20 bg-white flex flex-col lg:flex-row gap-20 items-center">
+            <div class="w-full lg:w-1/2">
+                <h2 class="font-serif text-5xl text-[#7A1118] mb-10 leading-tight">Crafting Heritage, <br>Preserving Trust</h2>
+                <div class="space-y-8 text-[#1C1C1C] text-xl font-light leading-relaxed max-w-xl">
+                    <p>
+                        Established in the heart of Madanapalle, Vijaya Krishna Jewellers is more than a jewellery store—it's a guardian of tradition and a curator of moments. Founded with a vision to connect heritage with elegance.
+                    </p>
+                    <p>
+                        Every piece tells a story. Every customer is part of our family. We believe that jewellery is not just an accessory; it's an expression of love, identity, and timelessness.
+                    </p>
+                </div>
+                <div class="mt-12">
+                    <p class="text-xs uppercase tracking-[0.2em] font-bold text-gray-400 mb-6">Proprietor</p>
+                    <p class="text-2xl font-serif mb-12">V Ananda Kumar</p>
+                    <a href="#" id="brand-story-cta" class="btn-outline px-12 py-5 text-xs font-bold tracking-[0.2em] uppercase">Discover Our Story</a>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 relative">
+                <img src="https://images.unsplash.com/photo-1610664921890-ebad0a086414?auto=format&fit=crop&q=80&w=1200" alt="Heritage Craftsmanship" class="w-full h-[650px] object-cover shadow-2xl">
+                <div class="absolute -bottom-8 -left-8 w-48 h-48 bg-[#7A1118] flex items-center justify-center p-8 hidden lg:flex">
+                    <p class="text-white font-serif text-xl text-center leading-tight">Crafted for <br> Generations</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Strip -->
+        <section class="w-full py-16 px-6 md:px-20 bg-[#FEFBF9] border-t border-[#E8E5E2]">
+            <div class="max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12">
+                <div class="flex flex-col items-center text-center gap-4">
+                    <iconify-icon icon="lucide:shield-check" class="text-3xl text-[#7A1118]"></iconify-icon>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-700">BIS Hallmarked</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4">
+                    <iconify-icon icon="lucide:award" class="text-3xl text-[#7A1118]"></iconify-icon>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-700">Certified Jewellery</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4">
+                    <iconify-icon icon="lucide:lock" class="text-3xl text-[#7A1118]"></iconify-icon>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-700">Secure Payments</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4">
+                    <iconify-icon icon="lucide:truck" class="text-3xl text-[#7A1118]"></iconify-icon>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-700">Insured Delivery</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4">
+                    <iconify-icon icon="lucide:rotate-cw" class="text-3xl text-[#7A1118]"></iconify-icon>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-700">Easy Exchange</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4">
+                    <iconify-icon icon="lucide:headset" class="text-3xl text-[#7A1118]"></iconify-icon>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-700">Expert Assistance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jewellery Education -->
+        <section class="w-full py-24 bg-white">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-20">
+                <div class="flex flex-col items-center mb-20">
+                    <h2 class="font-serif text-4xl text-center mb-4">Know Your Jewellery</h2>
+                    <div class="w-12 h-0.5 bg-[#7A1118]"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="#" id="guide-gold" class="group p-8 border border-[#E8E5E2] transition-all hover:bg-[#FEFBF9] hover:border-[#7A1118]">
+                        <iconify-icon icon="lucide:book-open" class="text-2xl text-[#7A1118] mb-6"></iconify-icon>
+                        <h3 class="font-serif text-xl mb-3">Gold Buying Guide</h3>
+                        <p class="text-sm text-gray-500 mb-6">Understand purity, hallmarking and pricing.</p>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#7A1118] group-hover:underline">Read Guide</span>
+                    </a>
+                    <a href="#" id="guide-diamond" class="group p-8 border border-[#E8E5E2] transition-all hover:bg-[#FEFBF9] hover:border-[#7A1118]">
+                        <iconify-icon icon="lucide:gem" class="text-2xl text-[#7A1118] mb-6"></iconify-icon>
+                        <h3 class="font-serif text-xl mb-3">Diamond Guide</h3>
+                        <p class="text-sm text-gray-500 mb-6">Learn about the 4Cs: Cut, Clarity, Color, and Carat.</p>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#7A1118] group-hover:underline">Read Guide</span>
+                    </a>
+                    <a href="#" id="guide-size" class="group p-8 border border-[#E8E5E2] transition-all hover:bg-[#FEFBF9] hover:border-[#7A1118]">
+                        <iconify-icon icon="lucide:ruler" class="text-2xl text-[#7A1118] mb-6"></iconify-icon>
+                        <h3 class="font-serif text-xl mb-3">Ring Size Guide</h3>
+                        <p class="text-sm text-gray-500 mb-6">Find your perfect fit with our sizing tool.</p>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#7A1118] group-hover:underline">Read Guide</span>
+                    </a>
+                    <a href="#" id="guide-care" class="group p-8 border border-[#E8E5E2] transition-all hover:bg-[#FEFBF9] hover:border-[#7A1118]">
+                        <iconify-icon icon="lucide:sparkles" class="text-2xl text-[#7A1118] mb-6"></iconify-icon>
+                        <h3 class="font-serif text-xl mb-3">Jewellery Care</h3>
+                        <p class="text-sm text-gray-500 mb-6">Tips to keep your precious pieces shining.</p>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#7A1118] group-hover:underline">Read Guide</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Section -->
+        <section class="w-full py-24 bg-[#FEFBF9] border-t border-[#E8E5E2]">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="w-full h-[500px] bg-gray-200 shadow-inner relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-[#7A1118]/5 transition-opacity duration-700 group-hover:opacity-0"></div>
+                    <div class="w-full h-full flex items-center justify-center">
+                        <span class="text-gray-400 font-serif text-xl italic tracking-widest">Madanapalle Showroom Map</span>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="mb-12">
+                        <h2 class="font-serif text-4xl text-[#7A1118] mb-8">Visit Our Showroom</h2>
+                        <p class="text-2xl text-[#1C1C1C] mb-4 font-light leading-relaxed">
+                            11/216, Nehru Bazaar, Madanapalle, 517325 <br>
+                            Chittoor District, Andhra Pradesh
+                        </p>
+                        <p class="text-sm text-gray-500 mb-12">Open Monday – Saturday: 10:30 AM – 8:30 PM</p>
+                    </div>
+                    <div class="flex flex-wrap gap-6 mb-16">
+                        <a href="#" id="store-directions" class="btn-filled px-10 py-5 text-[11px] font-bold tracking-[0.2em] uppercase">Get Directions</a>
+                        <a href="#" id="store-call" class="btn-outline px-10 py-5 text-[11px] font-bold tracking-[0.2em] uppercase">Call Store</a>
+                    </div>
+                    <div class="pt-12 border-t border-[#E8E5E2]">
+                        <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400 mb-4">Contact Our Experts</p>
+                        <p class="text-3xl font-serif text-[#7A1118] tracking-tight">+91 94411 36231</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-full bg-[#7A1118] text-white pt-24">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 pb-20">
+                <!-- Shop Col -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] mb-10 text-white/50">Shop</h4>
+                    <ul class="space-y-5 text-[13px] text-white/70 font-light">
+                        <li><a href="#" id="footer-link-gold" class="hover:text-white transition-colors">Gold Jewellery</a></li>
+                        <li><a href="#" id="footer-link-diamond" class="hover:text-white transition-colors">Diamond Jewellery</a></li>
+                        <li><a href="#" id="footer-link-solitaire" class="hover:text-white transition-colors">Solitaire Collection</a></li>
+                        <li><a href="#" id="footer-link-silver" class="hover:text-white transition-colors">Silver Jewellery</a></li>
+                        <li><a href="#" id="footer-link-mens" class="hover:text-white transition-colors">Men's Jewellery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Col -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] mb-10 text-white/50">Customer Service</h4>
+                    <ul class="space-y-5 text-[13px] text-white/70 font-light">
+                        <li><a href="#" id="footer-link-contact" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" id="footer-link-shipping" class="hover:text-white transition-colors">Shipping & Delivery</a></li>
+                        <li><a href="#" id="footer-link-returns" class="hover:text-white transition-colors">Returns & Exchanges</a></li>
+                        <li><a href="#" id="footer-link-track" class="hover:text-white transition-colors">Order Tracking</a></li>
+                        <li><a href="#" id="footer-link-faq" class="hover:text-white transition-colors">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Col -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] mb-10 text-white/50">Services</h4>
+                    <ul class="space-y-5 text-[13px] text-white/70 font-light">
+                        <li><a href="#" id="footer-link-appointment" class="hover:text-white transition-colors">Book Appointment</a></li>
+                        <li><a href="#" id="footer-link-try-home" class="hover:text-white transition-colors">Try at Home</a></li>
+                        <li><a href="#" id="footer-link-custom" class="hover:text-white transition-colors">Custom Design</a></li>
+                        <li><a href="#" id="footer-link-exchange" class="hover:text-white transition-colors">Gold Exchange</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1 shrink-0">
+                            <img src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/43025c08-4082-4a51-be13-74c2c6004878/1787580136682-c6c007e9/Screenshot_2025-05-27_at_10.32.13_AM.png" alt="Logo" class="h-6 w-auto">
+                        </div>
+                        <h4 class="font-serif text-xl tracking-wide">Vijaya Krishna Jewellers</h4>
+                    </div>
+                    <p class="text-[13px] text-white/50 font-light italic mb-10">"Your jewellery is our passion."</p>
+                    <div class="space-y-6 text-[13px] text-white/80 font-light">
+                        <div class="flex items-start gap-4">
+                            <iconify-icon icon="lucide:map-pin" class="text-lg mt-0.5 text-white/40"></iconify-icon>
+                            <span>11/216, Nehru Bazaar,<br>Madanapalle, 517325</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <iconify-icon icon="lucide:phone" class="text-lg text-white/40"></iconify-icon>
+                            <span>9441136231</span>
+                        </div>
+                    </div>
+                    <div class="mt-12 pt-8 border-t border-white/10">
+                        <p class="text-[9px] uppercase tracking-[0.3em] font-bold text-white/30 mb-2">Proprietor</p>
+                        <p class="text-sm font-medium">V Ananda Kumar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full border-t border-white/5 py-10 flex flex-col items-center">
+                <p class="text-[10px] text-white/20 tracking-[0.4em] uppercase font-medium">
+                    © 2024 Vijaya Krishna Jewellers. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+```
+
+Please reference this design and implement it into our codebase; Try to understand the structure, which part of our codebase is relevant and implement
